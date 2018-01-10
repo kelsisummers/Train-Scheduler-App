@@ -1,0 +1,71 @@
+.header {
+  background-color: #3c4047;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Glegoo', serif;
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+form {
+  border: 1px solid #3c4047;
+  padding: 10px;
+  color: #3c4047;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.card {
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#train-schedule {
+  border: 1px solid #3c4047;
+  height: 300px;
+}
+
+.card-header {
+  background-color: #3c4047;
+  color: #ffffff;
+  font-family: 'Glegoo', serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#submit-button {
+  background-color: #3c4047;
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px 10px 15px;
+  font-family: 'Glegoo', serif;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-radius: 0;
+}
+
+#table-headers {
+  font-weight: bold;
+  background-color: #ededed;
+}
+
+#train-image {
+  position: relative;
+  float: left;
+}
+
