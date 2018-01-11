@@ -57,11 +57,20 @@ database.ref().on('child_added', function(childSnapshot){
     var trainNameChild = childSnapshot.val().trainName;
     var destinationChild = childSnapshot.val().destination;
     var firstTrainChild = childSnapshot.val().firstTrain;
-    var frequencyChild = childSnapshot.val().frequency;
+    var frequencyChild = parseInt(childSnapshot.val().frequency);
+    // console.log(frequencyChild);
+    console.log(firstTrainChild);
 
-    var nextArrival;
+    var firstTrainMoment = moment(firstTrainChild, 'HH:mm').format('hh:mm A');
+    console.log(firstTrainMoment);
+
+
+    var nextArrival = moment(firstTrainMoment, 'hh:mm A').add(frequencyChild, 'm').format('hh:mm A');
+    console.log(nextArrival);
     
-    var minutesAway;
+    var minutesAway = moment(nextArrival,'hh:mm A').diff(moment(), 'minutes');
+    console.log(minutesAway);
+ 
 
 
 
