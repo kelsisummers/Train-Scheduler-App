@@ -148,12 +148,3 @@ database.ref().on('child_added', function(childSnapshot){
 
 var provider = new firebase.auth.GoogleAuthProvider();
 
-firebase.auth().signInWithRedirect(provider);
-
-
-
-firebase.auth().onAuthStateChanged(function(user){     
-    if(user){
-    window.location = "main.html";
-    }
-});
