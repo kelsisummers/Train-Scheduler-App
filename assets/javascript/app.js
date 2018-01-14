@@ -187,8 +187,8 @@ if (user === null) {
 //     var changeRef = firebase.database().ref();
 //     var keys = [];
     
-    if (user != null) {
-        firebase.auth().signInWithRedirect(provider);
+    // if (user != null) {
+        // firebase.auth().signInWithRedirect(provider);
 //     uid = currentUser.uid;
 //     firebase.database().ref('users/' + uid).set({
 //     xpos: xpos,
