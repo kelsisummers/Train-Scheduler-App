@@ -144,8 +144,3 @@ database.ref().on('child_added', function(childSnapshot){
 }, function(errorObject) {
     console.log("Errors handled: " + errorObject.code);
 });
-
-
-var provider = new firebase.auth.GoogleAuthProvider();
-
-firebase.auth().signInWithRedirect(provider);
