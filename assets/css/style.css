@@ -69,3 +69,14 @@ form {
   float: left;
 }
 
+.btn {
+  width: 100px;
+  text-align: center;
+  padding: 0;
+  margin: 5px;
+}
+
+.change {
+  width: 190px;
+  float: left;
+}

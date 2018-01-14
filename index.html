@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Train Schedule App</title>
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+    
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Glegoo|Roboto" rel="stylesheet">
 
+  <!-- Materialize Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-
   
 </head>
 <body>
@@ -44,7 +47,8 @@
                   <div class="col-md-2">Destination</div>
                   <div class="col-md-2">Frequency (min)</div>
                   <div class="col-md-2">Next Arrival</div>
-                  <div class="col-md-2">Minutes Away</div>
+                  <div class="col-md-2" style="text-align: left; padding-left: 0; margin-left: -10px">Minutes Away</div>
+                  <div class='col-md-2'></div>
               </div>
               </li>
 
@@ -86,6 +90,11 @@
       </div>
     </div>
   </div>
+
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 
 
     <!--Javascript file -->
