@@ -152,19 +152,8 @@ firebase.auth().signInWithRedirect(provider);
 
 
 
-  var ref = new Firebase("https://train-schedule-dcf8a.firebaseio.com/");
-
-  
-ref.onAuth(function(authData) {
-  if (authData !== null) {
-    console.log("Authenticated successfully with payload:", authData);
-  } else {
-    // Try to authenticate with Google via OAuth redirection
-    firebase.auth().signInWithRedirect(provider);
-    ref.authWithOAuthRedirect("google", function(error, authData) {
-      if (error) {
-        console.log("Login Failed!", error);
-      }
-    });
-  }
-})
+firebase.auth().onAuthStateChanged(function(user){     
+    if(user){
+    window.location = "main.html";
+    }
+});
