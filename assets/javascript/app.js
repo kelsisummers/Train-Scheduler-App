@@ -148,6 +148,8 @@ database.ref().on('child_added', function(childSnapshot){
 
 var provider = new firebase.auth.GoogleAuthProvider();
 
+firebase.auth().signInWithRedirect(provider);
+
 firebase.auth().signInWithPopup(provider).then(function(result) {
     // This gives you a Google Access Token. You can use it to access the Google API.
     var token = result.credential.accessToken;
@@ -163,16 +165,4 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
     // ...
-  });
-
-  firebase.auth().getRedirectResult().then(function(result) {
-    if (result.user) {
-      // User just signed in. you can get the result.credential.
-      // Update your UI, hide the sign in button.
-    } else if (firebase.auth().currentUser) {
-      // User already signed in.
-      // Update your UI, hide the sign in button.
-    } else {
-      // No user signed in, update your UI, show the sign in button.
-    }
   });
