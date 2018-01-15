@@ -5,14 +5,14 @@ App retrieves and manipulates this information with Moment.js. <br />
 Provides up-to-date information about various trains: arrival times, frequency, and minutes before next departure.
 
 Instructions:
-  - Scroll Down to 'Add Train' Form
-  - Fill Out All Input Fields
+  - Scroll down to 'Add Train' form
+  - Fill out ALL input fields
   - Click 'Submit'
-  - To Update:
-    - Click on the Text You Want to Update
-    - Type in Changes
-    - Click 'Update' Button
-  - To Delete Information:
+  - To update information:
+    - Click on the text you want to update
+    - Type in changes
+    - Click 'Update' button
+  - To delete information:
     - Click 'Remove'
   
 GitHub Pages Link: https://kelsisummers.github.io/train-scheduler-firebase/
