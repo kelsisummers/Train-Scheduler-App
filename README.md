@@ -4,6 +4,8 @@ Project 8: A train schedule application that incorporates Firebase to host arriv
 App retrieves and manipulates this information with Moment.js. <br />
 Provides up-to-date information about various trains: arrival times, frequency, and minutes before next departure.
 
+GitHub Pages: https://kelsisummers.github.io/train-scheduler-firebase/
+
 Instructions:
   - Scroll down to 'Add Train' form
   - Fill out ALL input fields
@@ -14,5 +16,10 @@ Instructions:
     - Click 'Update' button
   - To delete information:
     - Click 'Remove'
-  
-GitHub Pages Link: https://kelsisummers.github.io/train-scheduler-firebase/
+
+Software Stack:
+  - Javascript
+  - Firebase
+  - HTML
+  - CSS
+  - Materialize Framework
