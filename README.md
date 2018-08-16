@@ -1,12 +1,13 @@
 # train-scheduler-firebase
 
-Project 8: A train schedule application that incorporates Firebase to host arrival and departure data. <br /> 
+GitHub Pages: https://kelsisummers.github.io/Train-Scheduler-App/
+
+A train schedule application that incorporates Firebase to host arrival and departure data. <br /> 
 App retrieves and manipulates this information with Moment.js. <br />
 Provides up-to-date information about various trains: arrival times, frequency, and minutes before next departure.
 
-GitHub Pages: https://kelsisummers.github.io/Train-Scheduler-App/
-
 Instructions:
+
   - Scroll down to 'Add Train' form
   - Fill out ALL input fields
   - Click 'Submit'
@@ -17,9 +18,10 @@ Instructions:
   - To delete information:
     - Click 'Remove'
 
-Software Stack:
-  - Javascript
+Tech Stack:
+
+  - JavaScript
   - Firebase
   - HTML
   - CSS
-  - Materialize Framework
+  - Materialize CSS Framework
