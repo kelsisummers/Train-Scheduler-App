@@ -4,43 +4,83 @@ body {
   font-size: 16px; 
 }
 
-/* Button CSS */
-.btn {
-  width: 100px;
-  text-align: center;
-  padding: 0;
-  margin: 5px;
-  background-color:#3c4047;
+.train-container {
+  margin-top: 50px; 
+  margin-bottom: 50px;
 }
-.btn:hover, .btn-large:hover {
-  background-color:#3c4047;
 
+.train-container .card-title{
+  background-color:#3c4047; 
+  color:white;
+  padding: 10px;
 }
-/* Cover Container */
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col {
+  padding: 0;
+}
+
+.schedule-title {
+	background-color:#3c4047; 
+	color:white; 
+	padding: 10px
+}
+
+#schedule-headers{
+	background-color: lightgray; 
+	padding: 15px; 
+	margin-top: -24px;
+	margin-left: -24px; 
+	margin-right:  -24px;
+	text-align: center;
+}
+
+.button-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.train-info {
+	text-align: center;
+}
+
 #cover {
   position: relative;
   margin-bottom: 50px;
 }
 
-/* Title Text */
+.title-text {
+  margin: 0;
+}
+
 #title {
+	font-family: 'Paytone One', sans-serif;
   position: absolute;
   bottom: 4px;
   left: 0;
   background-color: #3c4047;
   opacity: .9;
   width: 100vw;
+  height: 100px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Card Title */
 .card-title {
   font-family: 'Paytone One', sans-serif;
   letter-spacing: 2px;
 }
 
-/* Header Row Text */
 .header-row{
   font-family: 'Varela Round', sans-serif;
   font-size: 18px;
@@ -48,3 +88,80 @@ body {
   font-weight: bold;
 }
 
+/* Button CSS */
+.btn {
+  width: 85px;
+  min-width: 85px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #3c4047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover, .btn-large:hover {
+  background-color:#3c4047;
+
+}
+
+/* Start of Responsive Queries */
+@media only screen and (max-width: 800px) {
+  #title {
+    height: 25%;
+	}
+	.title-text{
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+  .container{
+    width: 100vw;
+    padding: 0px;
+  }
+  .container .row {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: unset;
+  }
+  .col {
+    padding: 0;
+    margin-left: 0;
+    margin: 0;
+    min-width: 150px;
+  }
+  .card{
+    width: 100vw;
+    margin: 0;
+    margin-right: 0;
+  }
+  .card .card-content{
+    overflow: scroll;
+    padding: 0;
+  }
+  #schedule-headers {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: max-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #train-form{
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+	.title-text{
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.title-text {
+		font-size: 1.5rem;
+	}
+}
+/* End of Responsive Queries */
