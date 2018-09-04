@@ -1,6 +1,6 @@
 # train-scheduler-firebase
 
-GitHub Pages: https://kelsisummers.github.io/Train-Scheduler-App/
+<strong>Hosted App Link: https://kelsisummers.github.io/Train-Scheduler-App/</strong>
 
 A train schedule application that incorporates Firebase to host arrival and departure data. <br /> 
 App retrieves and manipulates this information with Moment.js. <br />
