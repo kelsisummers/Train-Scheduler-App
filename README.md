@@ -1,4 +1,4 @@
-# train-scheduler-firebase
+# Train-Scheduler-App
 
 <strong>Hosted App Link: https://kelsisummers.github.io/Train-Scheduler-App/</strong>
 
